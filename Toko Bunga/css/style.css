@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "navbar navbar"
+    "main main"
+    "footer footer";
+}
+nav{
+    grid-area: navbar;
+    background-color: #fffcf6;
+    text-align: center;
+#header{
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+}
+}
+main{
+    grid-area: main;
+    background-color: #fffcf6;
+}
+.tabel1{
+    margin:auto;
+    padding: 10px;
+    text-align: center;
+}
+main td{
+    padding: 5px;
+}
+footer{
+    grid-area: footer;
+}
